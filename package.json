@@ -1,7 +1,9 @@
 {
-  "name": "oauth2-server",
+  "name": "@cws/oauth2-server",
+  "main": "dist/index.js",
+  "exports": "./dist/index.js",
   "description": "Complete, framework-agnostic, compliant and well tested module for implementing an OAuth2 Server in node.js",
-  "version": "4.0.0-dev.3",
+  "version": "5.0.0",
   "keywords": [
     "oauth",
     "oauth2"
@@ -34,7 +36,6 @@
       "name": "Max Truxa"
     }
   ],
-  "main": "index.js",
   "dependencies": {
     "basic-auth": "2.0.1",
     "bluebird": "3.7.2",
@@ -44,22 +45,25 @@
     "type-is": "1.6.18"
   },
   "devDependencies": {
-    "jshint": "2.13.0",
-    "mocha": "5.2.0",
+    "jshint": "^2.13.6",
+    "mocha": "^10.2.0",
+    "rollup": "^4.0.2",
     "should": "13.2.3",
     "sinon": "7.5.0"
   },
   "license": "MIT",
   "engines": {
-    "node": ">=4.0"
+    "node": ">=18.*",
+    "npm": ">=9.*"
   },
   "scripts": {
+    "build": "rollup --config",
     "pretest": "./node_modules/.bin/jshint --config ./.jshintrc lib test",
     "test": "NODE_ENV=test ./node_modules/.bin/mocha 'test/**/*_test.js'",
     "test-debug": "NODE_ENV=test ./node_modules/.bin/mocha  --inspect --debug-brk 'test/**/*_test.js'"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/oauthjs/node-oauth2-server.git"
+    "url": "https://github.com/cwssrl/node-oauth2-server"
   }
 }
