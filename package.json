@@ -1,7 +1,7 @@
 {
   "name": "@cws/oauth2-server",
-  "main": "dist/index.js",
-  "exports": "./dist/index.js",
+  "main": "index.js",
+  "exports": "./index.js",
   "description": "Complete, framework-agnostic, compliant and well tested module for implementing an OAuth2 Server in node.js",
   "version": "5.0.1",
   "keywords": [

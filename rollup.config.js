@@ -1,7 +1,7 @@
 module.exports = {
     input: 'main.js',
     output: {
-        file: 'dist/index.js',
+        file: 'index.js',
         format: 'es'
     }
 };
